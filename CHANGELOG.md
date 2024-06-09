@@ -10,3 +10,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 06-06-2024
 
 - [Feature] Showcase pub-sub messaging trough NATS broker
+- [Feature] Showcase pub-sub messaging with security mechanisms using TLS and authentication through a NATS broker

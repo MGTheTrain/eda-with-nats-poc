@@ -28,6 +28,8 @@ public class Program
             opts.Url = "tls://localhost:4222"; // Update with NATS server URL using TLS
 
             // Authentication configuration. Consider implementing more secure authentication methods beyond username and password for production environments.
+            // Using TLS authentication with signed certificates may be adequate; the options mentioned above are a good starting point.
+            // For more information check out https://docs.nats.io/running-a-nats-service/configuration/securing_nats/auth_intro/tls_mutual_auth
             opts.User = "test-user";
             opts.Password = "test-password";
 

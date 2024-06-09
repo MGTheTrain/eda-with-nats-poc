@@ -15,11 +15,12 @@ Minimalistic proof of concept for event-driven architecture (EDA) using NATS
 
 - [nats.net Github repository](https://github.com/nats-io/nats.net)
 - [NATS and Docker](https://docs.nats.io/running-a-nats-service/nats_docker)
+- [NATS TLS Authentication](https://docs.nats.io/running-a-nats-service/configuration/securing_nats/auth_intro/tls_mutual_auth)
 
 ## Features
 
 - [x] Showcase pub-sub messaging trough NATS broker
-- [ ] Showcase pub-sub messaging with security mechanisms using TLS and authentication through a NATS broker
+- [x] Showcase pub-sub messaging with security mechanisms using TLS and authentication through a NATS broker
 
 ## Getting started
 
