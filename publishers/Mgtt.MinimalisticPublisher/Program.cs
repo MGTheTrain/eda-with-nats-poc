@@ -6,7 +6,7 @@ using System.Text;
 namespace Mgtt.MinimalisticPublisher;
 public class EventMessage
 {
-    public string Message { get; set; }
+    public string? Message { get; set; }
 }
 public class Program
 {

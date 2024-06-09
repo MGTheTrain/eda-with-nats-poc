@@ -6,7 +6,7 @@ namespace Mgtt.MinimalisticSubscriber;
 
 public class EventMessage
 {
-    public string Message { get; set; }
+    public string? Message { get; set; }
 }
 
 public class Program
@@ -26,7 +26,7 @@ public class Program
                     var jsonMessage = Encoding.UTF8.GetString(msgArgs.Message.Data);
                     var eventMessage = JsonConvert.DeserializeObject<EventMessage>(jsonMessage);
                     Console.WriteLine("Received message:");
-                    Console.WriteLine($"Message: {eventMessage.Message}");
+                    Console.WriteLine($"Message: {eventMessage!.Message}");
                 };
                 subscription.Start();
 
