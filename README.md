@@ -20,7 +20,7 @@ Minimalistic proof of concept for event-driven architecture (EDA) using NATS
 ## Features
 
 - [x] Showcase pub-sub messaging trough NATS broker
-- [x] Showcase pub-sub messaging with security mechanisms using TLS and authentication through a NATS broker
+- [x] Showcase pub-sub messaging with security mechanisms using TLS for encryption and authentication through a NATS broker
 
 ## Getting started
 
