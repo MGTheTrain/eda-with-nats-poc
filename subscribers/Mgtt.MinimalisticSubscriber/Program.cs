@@ -1,7 +1,11 @@
 ﻿using NATS.Client;
 using Newtonsoft.Json;
-using System;
 using System.Text;
+
+public class EventMessage
+{
+    public string Message { get; set; }
+}
 
 public class Program
 {

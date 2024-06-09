@@ -3,6 +3,10 @@ using Newtonsoft.Json;
 using System;
 using System.Text;
 
+public class EventMessage
+{
+    public string Message { get; set; }
+}
 public class Program
 {
     public static void Main(string[] args)
@@ -12,7 +16,7 @@ public class Program
 
         using (var connection = new ConnectionFactory().CreateConnection(opts))
         {
-            var message = new EventMessage { Message = "Hello, NATS without MediatR!" };
+            var message = new EventMessage { Message = "Hello NATS" };
             var jsonMessage = JsonConvert.SerializeObject(message);
             var messageBytes = Encoding.UTF8.GetBytes(jsonMessage);
             connection.Publish("event-topic", messageBytes);
