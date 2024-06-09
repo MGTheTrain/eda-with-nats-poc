@@ -69,6 +69,10 @@ docker-compose down -v
 docker-compose -f docker-compose.nats-with-tls-and-auth.yml up -d --build
 ```
 
+The logs within the Docker container should appear similar to the following:
+
+![nats-tls-with-auth-docker-logs](./images/nats-tls-with-auth-docker-logs.PNG)
+
 2. Launch the subscriber application in a terminal process:
 
 ```sh
@@ -85,7 +89,7 @@ dotnet run
 
 4. Observe that the subscriber successfully receives the submitted event. Results should resemble the following:
 
-![pub-sub-messaging-with-nats-example](./images/pub-sub-messaging-with-nats-example.PNG)
+![pub-sub-messaging-with-nats-tls-and-auth-example](./images/pub-sub-messaging-with-nats-tls-and-auth-example.PNG)
 
 5. Terminate the subscriber application by pressing any key and remove resources of the local Docker Compose cluster:
 
