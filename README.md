@@ -90,5 +90,5 @@ dotnet run
 5. Terminate the subscriber application by pressing any key and remove resources of the local Docker Compose cluster:
 
 ```sh
-docker-compose down --file docker-compose.nats-with-tls-and-auth.yml -v
+docker-compose -f docker-compose.nats-with-tls-and-auth.yml down -v
 ```
