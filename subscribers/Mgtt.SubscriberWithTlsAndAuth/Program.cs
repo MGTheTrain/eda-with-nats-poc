@@ -27,8 +27,9 @@ public class Program
             };
             opts.Url = "tls://localhost:4222"; // Update with NATS server URL using TLS
 
-            // // Authentication configuration (if required)
-            // opts.SetUserCredentials("username", "password"); // Update with your username and password
+            // Authentication configuration. Consider implementing more secure authentication methods beyond username and password for production environments.
+            opts.User = "test-user";
+            opts.Password = "test-password";
 
             using (var connection = new ConnectionFactory().CreateConnection(opts))
             {
