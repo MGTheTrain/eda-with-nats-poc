@@ -27,6 +27,7 @@ Minimalistic proof of concept for event-driven architecture (EDA) using NATS
 ### Preconditions
 
 - [Install Docker Engine](https://docs.docker.com/engine/install/)
+- [Download .NET 8 SDK](https://dotnet.microsoft.com/en-us/download)
 
 ### Minimalistic setup
 
