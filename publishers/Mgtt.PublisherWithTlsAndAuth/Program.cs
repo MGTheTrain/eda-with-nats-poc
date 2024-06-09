@@ -16,11 +16,14 @@ public class Program
         {
             var opts = ConnectionFactory.GetDefaultOptions();
             opts.Secure = true;
-            string serverCertificatePath = "../../certs/server-cert.pem";
-            string serverCertificate = File.ReadAllText(serverCertificatePath);
+            string caCertificatePath = "../../certs/ca-cert.pem";
+            string caCertificate = File.ReadAllText(caCertificatePath);
+            Console.WriteLine("CA Certificate:");
+            Console.WriteLine(caCertificate);
             opts.TLSRemoteCertificationValidationCallback = (sender, certificate, chain, sslPolicyErrors) =>
             {
-                return serverCertificate.Equals(certificate!.ToString());
+                // return caCertificate.Equals(certificate?.ToString()); // In production environments utilizing signed certificates from a Certificate Authority (CA), it's imperative to validate the certificate for secure communication
+                return true; // bypass certificate validation with self-signed certs only
             };
             opts.Url = "tls://localhost:4222"; // Update with NATS server URL using TLS
 
