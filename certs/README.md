@@ -2,7 +2,7 @@
 
 If you need to refresh the certificates and private keys because they are expiring, follow these steps:
 
-0. Generate Self-Signed Certificate with OpenSSL: 
+0. Generate **Self-Signed Certificate** with OpenSSL: 
 
 ```sh
 # Generate private key
@@ -15,7 +15,7 @@ openssl req -new -key server-key.pem -out server-csr.pem
 openssl x509 -req -days 365 -in server-csr.pem -signkey server-key.pem -out server-cert.pem
 ```
 
-1. Generate Self-Signed CA Certificate with OpenSSL: 
+1. Generate **Self-Signed CA Certificate** with OpenSSL: 
 
 ```sh
 # Generate private key
