@@ -49,7 +49,9 @@ cd publishers/Mgtt.MinimalisticPublisher
 dotnet run
 ```
 
-3. Observe that the subscriber successfully receives the submitted event.
+3. Observe that the subscriber successfully receives the submitted event. Results should resemble the following:
+
+![pub-sub-messaging-with-nats-example](./images/pub-sub-messaging-with-nats-example.PNG)
 
 4. Terminate the subscriber application by pressing any key and remove resources of the local Docker Compose cluster:
 
