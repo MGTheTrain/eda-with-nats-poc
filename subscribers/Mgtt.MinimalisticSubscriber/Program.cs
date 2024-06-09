@@ -2,6 +2,8 @@
 using Newtonsoft.Json;
 using System.Text;
 
+namespace Mgtt.MinimalisticSubscriber;
+
 public class EventMessage
 {
     public string Message { get; set; }

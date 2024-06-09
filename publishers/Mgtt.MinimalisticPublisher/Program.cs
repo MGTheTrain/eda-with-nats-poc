@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using System;
 using System.Text;
 
+namespace Mgtt.MinimalisticPublisher;
 public class EventMessage
 {
     public string Message { get; set; }
